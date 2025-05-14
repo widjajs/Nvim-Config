@@ -12,7 +12,8 @@ return {
         css = { "prettier" }, -- Use Prettier for CSS
         json = { "prettier" }, -- Use Prettier for JSON
         c = { "clang_format" }, -- Use clang-format for C files
-        python = { "black" }, -- Use Black for Python file
+        python = { "ruff" }, -- Use ruff for Python file
+        java = { "clang_format" }, -- Use clang-format for Java files
       },
 
       -- Customize formatter options
@@ -25,9 +26,6 @@ return {
         },
         clang_format = {
           prepend_args = { "--style={BasedOnStyle: LLVM, ColumnLimit: 80, IndentWidth: 2}" }, -- clang-format options
-        },
-        black = {
-          prepend_args = { "--line-length", "88" }, -- Black options
         },
       },
     },

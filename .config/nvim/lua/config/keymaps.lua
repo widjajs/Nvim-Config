@@ -43,3 +43,8 @@ vim.keymap.set("v", "J", "<cmd>m '>+1<cr>gv=gv", { desc = "Move selected lines d
 
 -- Lazy git
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open LazyGit" })
+
+-- Clear noice-nvim msgs
+vim.keymap.set("n", "<leader>ca", function()
+  require("noice").cmd("dismiss")
+end, { desc = "Clear Noice messages" })

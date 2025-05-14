@@ -5,3 +5,4 @@ vim.opt.relativenumber = false
 vim.cmd("cd /mnt/c/Users/saw05/OneDrive/Documents/CS")
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = "ruff"
+vim.opt.laststatus = 0
